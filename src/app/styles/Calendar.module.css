@@ -1,0 +1,64 @@
+/* Calendar.module.css */
+.calendarContainer {
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid #000000; /* Add a border to the calendar */
+    border-radius: 10px; /* Add curved corners to the border */
+    overflow: hidden; /* Ensure the content stays within the rounded border */
+    width : 72;
+  }
+  .monthYearContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+  }  
+  .monthYearText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+  }
+  .monthName {
+    color: #000000; /* Set the month name color to blue */
+    font-weight: bold; /* Make the month name bold */
+    font-size: 24px; /* Adjust the font size as desired */
+    margin-bottom: 5px; /* Add some space below the month name */
+    padding-left: 10px; /* Add left padding to the month name */
+  }  
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #00008b;
+    margin-bottom: 5px; /* Add some space below the line */
+  }
+  .yearNumber {
+    color: #00008b; /* Set the year number color to dark blue */
+    font-weight: normal; /* Make the year number non-bold */
+    font-size: 18px; /* Adjust the font size as desired */
+    padding-left: 10px; /* Add left padding to the year number */
+  }
+  .calendar {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .dayHeader {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #00008b; /* Set column names to blue */
+    border-top: 1px solid #00008b; /* Add a thin line above the column names */
+  }
+  .dayCell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.5); /* Make the squares slightly transparent */
+    color: #666; /* Set the text color to dark grey */
+    font-weight: bold; /* Remove bold font weight */
+  }
+  .dayCell.currentDate {
+    color: #fff; /* Set the text color to white for the current date */
+    background-color: rgba(0, 0, 139, 0.7); /* Highlight the current date with semi-transparent dark blue background */
+  }

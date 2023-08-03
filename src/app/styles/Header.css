@@ -1,0 +1,47 @@
+#sortboxStudents:checked ~ #sortboxmenuStudents {
+    opacity: 1;
+}
+#sortboxParents:checked ~ #sortboxmenuParents {
+    opacity: 1;
+}
+
+#sortbox:checked ~ #sortboxmenu {
+    opacity: 1;
+}
+
+#sortboxAlumni:checked ~ #sortboxmenuAlumni {
+    opacity: 1;
+}
+
+#sortboxCareers:checked ~ #sortboxmenuCareers {
+    opacity: 1;
+}
+
+#sortboxHome:checked ~ #sortboxmenuHome {
+    opacity: 1;
+}
+#sortboxAbout:checked ~ #sortboxmenuAbout {
+    opacity: 1;
+}
+
+#sortboxAcademics:checked ~ #sortboxmenuAcademics {
+    opacity: 1;
+}
+#sortboxFacilities:checked ~ #sortboxmenuFacilities {
+    opacity: 1;
+}
+#sortboxAdmission:checked ~ #sortboxmenuAdmission {
+    opacity: 1;
+}
+#sortboxResearch:checked ~ #sortboxmenuResearch {
+    opacity: 1;
+}
+#sortboxIndustry:checked ~ #sortboxmenuIndustry {
+    opacity: 1;
+}
+#sortboxMore:checked ~ #sortboxmenuMore {
+    opacity: 1;
+}
+#sortboxContact:checked ~ #sortboxmenuContact {
+    opacity: 1;
+}

@@ -1,0 +1,36 @@
+
+
+.Map{
+   padding: 30px;
+}
+
+
+.Inner-text
+{
+    color: white;
+    padding-right: 20px;
+    font-size: small;
+    letter-spacing:1px;
+    padding-bottom: 2px;
+    
+}
+
+.logo_text{
+    color: white;
+    font-size: small;
+    font-family: "Times New Roman";
+}
+.PSG_LOGO
+{
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    font-family: "Times New Roman";
+}
+.address{
+    color:white;
+    font-size: small;
+    letter-spacing:2px;
+    padding-left: 3px;
+    opacity: 90;
+}
