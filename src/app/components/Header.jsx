@@ -18,20 +18,20 @@ export default function Header() {
     <nav className='wrapper w-full sticky top-0 bg-white z-50'>
         {/*  Top Header */}
         <div className={lato400.className}>
-      <div className="flex flex-row w-full p-4 justify-between items-center">
+      <div className="flex flex-row w-full p-4 justify-between items-center bg-[#3E59B8] text-white">
         <div className="flex flex-row w-2/5 items-center">
             <div className="flex">
             <Image src={psgLogo} className='w-auto h-16' alt=""/>
-            <Image src={g20} className='w-auto h-16' alt=""/>
+            <Image src={g20} className='w-auto h-16 hidden' alt=""/>
             </div>
-            <div className=" flex justify-center w-full text-xl text-bold">
+            <div className=" flex pl-2 w-full text-xl text-bold">
                 <div className={lato700.className}>PSG College of Technology</div>
             </div>
           
         </div>
         {/* Search Bar */}
         <div className="w-1/5 h-12 border-2 border-gray-300 rounded-3xl focus:border-gray-300 p-1.5 flex flex-row items-center justify-between ">
-        <input type="text"  placeholder='Search' className='focus:outline-none px-2'/>
+        <input type="text"  placeholder='Search' className='focus:outline-none bg-[#3E59B8] px-2'/>
         <BsSearch className='mr-2'/>
         </div>
         {/* Right side */}
