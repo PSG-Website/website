@@ -11,8 +11,11 @@ import Highlights from "./components/Highlights";
 // import BackgroundVideo from './components/BackgroundVideo.jsx'
 import BackgroundVideo from './components/BackgroundVideo.jsx'
 import Calendar from './components/Calendar.jsx'
+import Message from './components/Message.jsx'
+import Tray from "./components/Tray2.jsx";
 import Facilities from './components/Facilities.jsx'
 import { Lexend_Deca } from "next/font/google";
+
 const lexend700 = Lexend_Deca({weight:'700' ,subsets:['latin']})
 
 
@@ -23,7 +26,7 @@ import './styles/styles.css'
 export default function Home() {
   const currentDate = new Date();
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center overflow-x-clip">
       <Header className="w-full z-50" />
       <div className="relative">
         <BackgroundVideo/>
@@ -33,9 +36,13 @@ export default function Home() {
             <h1 className="text-5xl text-bold">PSG College Of Technology</h1>
           </div>      
         </div>
-        <div className="absolute bottom-0 left-0">
-          <Calendar date={currentDate} />
+        <div className="absolute top-[-30px] left-7">
+          <Message />
         </div>
+      </div>
+
+      <div className="fixed top-[30%] right-[4%] z-50">
+        <Tray />
       </div>
       <div className="my-4"> 
       <Intro className="z-30"/>

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import "../styles/Header.css"
 import { Lato } from 'next/font/google'
 
+
 const lato400 = Lato({weight:'400',subsets:['latin']})
 const lato700 = Lato({weight:'700',subsets:['latin']})
 
