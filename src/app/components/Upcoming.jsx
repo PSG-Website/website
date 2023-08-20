@@ -28,11 +28,11 @@ export default function Upcoming() {
 
      <div>
       <span className="  background  sm:block md:grid  justify-center h-120 mt-20 p-8 w-[80%] ml-[10%]">
-          <section className="md:flex sm:block flex-wrap gap-4 h-auto" onClick={openModal} >
+          <section className="md:flex sm:block flex-wrap gap-4 h-auto" >
 
               {/* {array.map(_=><Strip/>) }
                */}
-               {array.map((_, index) => <Strip key={index} />)}
+               {array.map((_, index) => <Strip key={index} onclick={openModal} />)}
           </section>            
       </span>
 
