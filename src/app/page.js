@@ -15,6 +15,7 @@ import Message from './components/Message.jsx'
 import Tray from "./components/Tray2.jsx";
 import Facilities from './components/Facilities.jsx'
 import { Lexend_Deca } from "next/font/google";
+import g20 from "./public/images/G20.png"
 
 const lexend700 = Lexend_Deca({weight:'700' ,subsets:['latin']})
 
@@ -30,11 +31,20 @@ export default function Home() {
       <Header className="w-full z-50" />
       <div className="relative">
         <BackgroundVideo/>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+        <div className="flex justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
           <div className={lexend700.className}>
             <h2 className="text-3xl">Welcome To</h2>
             <h1 className="text-5xl text-bold">PSG College Of Technology</h1>
-          </div>      
+          </div>   
+          <div className="h-full border-l-2 border-white mx-auto"></div>
+          <div>
+            <Image
+                src={g20}
+                alt="G20 Image"
+                width={300}
+                height={200}
+              />
+          </div>   
         </div>
         <div className="absolute top-[-30px] left-7">
           <Message />
