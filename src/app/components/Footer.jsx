@@ -20,7 +20,7 @@ import Image from 'next/image';
 export default function Footer() {
     return (
     <div >
-       <div className="bg-[#1D2D58] opacity-90 h-[650px] w-full">
+       <div className="bg-[#1D2D58] opacity-90 h-[650px] min-w-screen">
             {/* <Image width={10000} height={10000} src={bgImg} alt="PSG College of Technology" /> */}
             <div className="flex flex-col" >
                 <div className="UpperPortion flex ">
