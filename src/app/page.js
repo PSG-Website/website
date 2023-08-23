@@ -27,7 +27,7 @@ export default function Home() {
   const currentDate = new Date();
   return (
     <main className="flex min-h-screen flex-col items-center overflow-x-clip">
-      <Header className="w-full z-50" />
+      <Header className="w-full z-50" />      
       <div className="relative">
         <BackgroundVideo/>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="fixed top-[30%] right-[4%] z-50">
+      <div className="fixed top-[30%] right-[4%] z-20">
         <Tray />
       </div>
       <div className="my-4"> 

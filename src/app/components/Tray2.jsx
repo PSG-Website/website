@@ -28,7 +28,7 @@ const Tray = () => {
   return (
     <main className={lato700.className}>
     <div className="flex">
-      <div className="bg-[#3e59b8] text-white absolute inset-x-[95%] inset-y-[20%] w-[60px] h-[350px]  roundwed rounded-l-[15px]">
+      <div className="bg-[#3e59b8] text-white absolute inset-x-[95%] inset-y-[20%] w-[60px] h-[350px] z-20  roundwed rounded-l-[15px]">
         <div className='relative inset-x-[20%] inset-y-[10%] hover:bg-[#d1dbfd] h-[20%] w-[80%] rounded-l-[30%]' onClick={toggleSidebar}>
         <Image src={tray1} width={30} height={30} className='relative inset-x-[10%] inset-y-[30%] cursor-pointer'></Image>
         </div>
@@ -42,7 +42,7 @@ const Tray = () => {
         <Image src={tray4} width={30} height={30} className='relative inset-x-[10%] inset-y-[30%]'></Image>
         </div>
       </div>
-      <div className={`fixed inset-y-[25%] right-0 w-[23%] rounded-l-[20px] overflow-hidden h-[450px] bg-[#2B324A] text-white transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-y-[25%] right-0 w-[23%] rounded-l-[20px] z-40 overflow-hidden h-[450px] bg-[#2B324A] text-white transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
       <button className="absolute top-4 right-4 text-xl text-[#ffffff] bg-[#2B324A] w-[9%] hover:bg-white rounded-[5px] hover:text-[#2B324A] transition" onClick={toggleSidebar}>
         X
       </button>
